@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin Control</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container" id="input-container">
+        <form id="productForm">
+          <div class="inpt-box">
+            <input type="file" id="img" autocomplete="none" />
+          </div>
+          <div class="inpt-box">
+            <input
+              type="text"
+              id="name"
+              autocomplete="none"
+              placeholder="Product Name"
+            />
+          </div>
+          <div class="inpt-box">
+            <input
+              type="text"
+              id="info"
+              autocomplete="none"
+              placeholder="Product Description"
+            />
+          </div>
+          <div class="inpt-box">
+            <input
+              type="text"
+              id="price"
+              autocomplete="none"
+              placeholder="Product Price"
+            />
+          </div>
+          <div class="btn">
+            <button type="button" onclick="add()">Add Product</button>
+          </div>
+        </form>
+      </div>
+      <div class="card-container" id="card-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
